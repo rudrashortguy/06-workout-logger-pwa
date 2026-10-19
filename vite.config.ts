@@ -6,28 +6,27 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
-      manifest: {
-        name: 'FitFlow Gym',
-        short_name: 'FitFlow',
-        description: 'Gym workout logger, set tracker, and rest interval timer.',
-        theme_color: '#4f46e5',
-        background_color: '#09090b',
-        display: 'standalone',
-        icons: [
-          {
-            src: 'pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          }
+    "registerType": "autoUpdate",
+    "manifest": {
+        "name": "FitFlow - Gym Tracker & Rest Intervals",
+        "short_name": "FitFlow",
+        "description": "Track sets, reps, and weights offline during workouts with built-in rest timers and exercise history logs.",
+        "theme_color": "#EC4899",
+        "background_color": "#ffffff",
+        "display": "standalone",
+        "icons": [
+            {
+                "src": "pwa-192x192.png",
+                "sizes": "192x192",
+                "type": "image/png"
+            },
+            {
+                "src": "pwa-512x512.png",
+                "sizes": "512x512",
+                "type": "image/png"
+            }
         ]
-      }
-    })
+    }
+})
   ]
 });
